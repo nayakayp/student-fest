@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
+import Nav from "./Nav";
 
 const name = "Coming Soon";
 export const siteTitle = "Student Festival";
@@ -12,9 +13,14 @@ export default function Layout({ children, home }) {
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet"
+        />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Student Fest adalah acara untuk menumbuh kembangkan skill bagi pelajar SMP-SMA di Pamekasan"
         />
         <meta
           property="og:image"
@@ -27,16 +33,7 @@ export default function Layout({ children, home }) {
       </Head>
       <header className={styles.header}>
         {home ? (
-          <>
-            <Image
-              priority
-              src="/images/logo.png"
-              height={150}
-              width={250}
-              alt="Student Festival"
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          </>
+          <></>
         ) : (
           <>
             <Link href="/">
@@ -67,6 +64,7 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
+      <footer></footer>
     </div>
   );
 }

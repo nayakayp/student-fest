@@ -1,9 +1,14 @@
 import Head from "next/head";
+import Image from "next/image";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
+import styles from "../components/layout.module.css";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Date from "../components/date";
+import Hero from "../components/Hero";
+import Profil from "../components/Profil";
+import Mentor from "../components/Mentor";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -18,11 +23,15 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>Selamat datang di Student Fest</p>
-        <p>Website ini masih dalam tahap pengembangan</p>
-      </section>
-      {/* <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+      <Hero />
+      <Profil />
+      <Mentor />
+    </Layout>
+  );
+}
+
+{
+  /* <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
@@ -37,7 +46,5 @@ export default function Home({ allPostsData }) {
             </li>
           ))}
         </ul>
-      </section> */}
-    </Layout>
-  );
+      </section> */
 }
