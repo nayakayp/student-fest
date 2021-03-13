@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
-import Nav from "./Nav";
+import Footer from "./Footer";
 
 const name = "Coming Soon";
 export const siteTitle = "Student Festival";
@@ -64,7 +64,7 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
-      <footer></footer>
+      <Footer />
     </div>
   );
 }

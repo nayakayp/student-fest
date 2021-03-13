@@ -13,7 +13,7 @@ export default function Hero() {
             <span className="material-icons">arrow_downward</span>
           </a>
         </div>
-        <Image src="/images/hero illustration.png" width={519} height={592} />
+        <Image src="/images/hero illustration.png" width={453} height={407} />
       </div>
       <style jsx>{`
         h1 {

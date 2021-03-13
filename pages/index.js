@@ -9,6 +9,9 @@ import Date from "../components/date";
 import Hero from "../components/Hero";
 import Profil from "../components/Profil";
 import Mentor from "../components/Mentor";
+import Form from "../components/Form";
+import Banner from "../components/Banner";
+import FAQ from "../components/Faq";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -26,6 +29,9 @@ export default function Home({ allPostsData }) {
       <Hero />
       <Profil />
       <Mentor />
+      <Form />
+      <Banner />
+      <FAQ />
     </Layout>
   );
 }
