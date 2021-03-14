@@ -1,7 +1,8 @@
 .container {
-  max-width: 36rem;
-  padding: 0 1rem;
-  margin: 3rem auto 6rem;
+  /* max-width: 1440px; */
+  /* padding: 0 12.2rem; */
+  margin: 0 auto;
+  background: #eaf5fb;
 }
 
 .header {
