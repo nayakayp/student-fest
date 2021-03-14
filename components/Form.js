@@ -172,7 +172,7 @@ export default function Form() {
           }
           section {
             max-width: 1440px;
-            padding: 0 12.2rem;
+            padding: 0 12.2rem 8rem;
             margin: 0 auto;
           }
           .form-wrapper {
