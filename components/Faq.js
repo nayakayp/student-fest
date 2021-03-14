@@ -9,10 +9,13 @@ export default function Faq() {
       acc[i].addEventListener("click", function () {
         this.classList.toggle("active");
         var panel = this.nextElementSibling;
+        console.log(panel);
         if (panel.style.maxHeight) {
           panel.style.maxHeight = null;
+          panel.style.padding = "0 2rem";
         } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
+          panel.style.maxHeight = panel.scrollHeight + 20 + "px";
+          panel.style.padding = "1rem 2rem";
         }
       });
     }
@@ -24,33 +27,68 @@ export default function Faq() {
       <div className={`line ${utilStyles.line}`}></div>
 
       <div className="faq">
-        <button className="accordion">Section 1</button>
+        <button className="accordion">
+          Siapa yang mengadakan Student Fest?
+        </button>
         <div className="panel">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Jadi kegiatan ini kolaborasi beberapa teman pelajar dari SMP-SMA di
+            Pamekasan yang berinisiatif buat meningkatkan skill sesama pelajar.
+            Maka dari itu agendanya dinamakan Student Fest
           </p>
         </div>
 
-        <button className="accordion">Section 2</button>
+        <button className="accordion">Siapa saja peserta Student Fest?</button>
         <div className="panel">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Student Fest terbuka unutk pelajar SMP-SMA sederajat yang ada di
+            Pamekasan
           </p>
         </div>
 
-        <button className="accordion">Section 3</button>
+        <button className="accordion">
+          Apakah acaranya diadakan online/offline?
+        </button>
         <div className="panel">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Acaranya kami adakan offline dengan tetap memperhatikan protokol
+            kesehatan untuk mencegah Covid-19
+          </p>
+        </div>
+
+        <button className="accordion">
+          Apa saja materi yang diberikan pada saat acara? Apakah beda dengan
+          Student Fest Batch #1?
+        </button>
+        <div className="panel">
+          <p>
+            Yups, berbeda dong. Yang sekarang lebih intens dan berkelanjutan
+            gitu. Untuk materi batch sebelumnya ada public speaking,
+            entrepreneur, dan cognitive flexibility. Nah kalau yang sekarang
+            kita sesuaikan lagi dengan kebutuhan pelajar. Jadi nanti ada materi
+            public speaking, design power point, dan entrepreneur.
+          </p>
+        </div>
+
+        <button className="accordion">
+          Fasilitas apa saja yang akan didapatkan dengan mengikuti Student Fest
+          Batch #2 ini?
+        </button>
+        <div className="panel">
+          <p>
+            Banyak banget! Kamu bakal belajar materi bersama mentor yang sudah
+            berpengalaman di bidangnya. Jadi bukan seperti seminar pada umumny,
+            tapi bakal didampingi + langsung praktek.
+          </p>
+        </div>
+
+        <button className="accordion">
+          Apakah Student Fest Batch #2 ini gratis?
+        </button>
+        <div className="panel">
+          <p>
+            Gratis dong! Jadi eman banget kalau kamu nggak ikutan. Segera daftar
+            ya dengan mengisi formulir pendaftaran yang ada di website ini
           </p>
         </div>
       </div>
@@ -67,7 +105,6 @@ export default function Faq() {
         .line {
           background: #333;
         }
-        .accordion,
         .panel {
           margin-bottom: 1rem;
         }
@@ -92,7 +129,7 @@ export default function Faq() {
 
         .panel {
           border-radius: 5px;
-          padding: 2rem;
+          padding: 0 2rem;
           font-size: 1.6rem;
           background-color: white;
           max-height: 0;

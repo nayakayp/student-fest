@@ -17,7 +17,6 @@ export default function Nav() {
       links.style.display = "none";
     });
     window.addEventListener("scroll", () => {
-      console.log(offset, window.pageYOffset);
       if (window.pageYOffset >= offset) {
         nav.classList.add("sticky");
       } else {
