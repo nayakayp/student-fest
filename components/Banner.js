@@ -16,12 +16,14 @@ export default function Banner() {
           color: white;
           font-family: "Baloo 2", sans-serif;
           line-height: 1;
+          flex: 1 1 30rem;
         }
 
         .button-wrapper {
           display: flex;
           flex-direction: column;
           justify-content: center;
+          flex: 1 1 30rem;
         }
         .proposal span {
           margin-right: 1rem;
@@ -72,9 +74,11 @@ export default function Banner() {
           h3 {
             font-size: 4rem;
             text-align: center;
+            flex: 0;
           }
           .button-wrapper {
             margin-top: 2rem;
+            flex: 0;
           }
           .donasi {
             margin-bottom: 1rem;
