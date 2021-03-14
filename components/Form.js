@@ -37,7 +37,7 @@ export default function Form() {
       });
   };
   return (
-    <section>
+    <section id="daftar">
       <h3 className={utilStyles.headingLg}>Ikuti Acara Ini</h3>
       <h2 className={utilStyles.headingXl}>Daftarkan Dirimu</h2>
       <div className={`line ${utilStyles.line}`}></div>
@@ -173,7 +173,6 @@ export default function Form() {
           section {
             max-width: 1440px;
             padding: 0 12.2rem;
-            height: 956px;
             margin: 0 auto;
           }
           .form-wrapper {
@@ -260,6 +259,27 @@ export default function Form() {
           }
           .form-group input {
             margin-right: 1rem;
+          }
+          @media only screen and (max-width: 600px) {
+            section {
+              padding: 2rem;
+            }
+            .inputLabel {
+              font-size: 1.6rem;
+            }
+            .input-wrapper {
+              width: 100%;
+            }
+            .timeline {
+              margin-top: 4rem;
+              margin-left: 0;
+            }
+            .timeline button {
+              font-size: 1.4rem;
+            }
+            .radio-wrapper label {
+              font-size: 1.6rem;
+            }
           }
         `}
       </style>

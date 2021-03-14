@@ -1,22 +1,24 @@
 import utilStyles from "../styles/utils.module.css";
+import { useEffect } from "react";
 
 export default function Faq() {
-  //   var acc = document.getElementsByClassName("accordion");
-  //   var i;
-
-  //   for (i = 0; i < acc.length; i++) {
-  //     acc[i].addEventListener("click", function () {
-  //       this.classList.toggle("active");
-  //       var panel = this.nextElementSibling;
-  //       if (panel.style.maxHeight) {
-  //         panel.style.maxHeight = null;
-  //       } else {
-  //         panel.style.maxHeight = panel.scrollHeight + "px";
-  //       }
-  //     });
-  //   }
+  useEffect(() => {
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  });
   return (
-    <section>
+    <section id="faq">
       <h3 className={utilStyles.headingLg}>Daftar</h3>
       <h2 className={utilStyles.headingXl}>Pertanyaan Umum</h2>
       <div className={`line ${utilStyles.line}`}></div>
@@ -59,7 +61,7 @@ export default function Faq() {
           color: #333;
         }
         .faq {
-          width: 800px;
+          max-width: 800px;
           margin: 0 auto;
         }
         .line {
@@ -96,6 +98,11 @@ export default function Faq() {
           max-height: 0;
           overflow: hidden;
           transition: max-height 0.2s ease-out;
+        }
+        @media only screen and (max-width: 600px) {
+          section {
+            padding: 0 2rem;
+          }
         }
       `}</style>
     </section>

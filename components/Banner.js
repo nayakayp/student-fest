@@ -1,6 +1,6 @@
 export default function Banner() {
   return (
-    <section>
+    <section id="donasi">
       <h3>Ingin mendukung program kami?</h3>
       <div className="button-wrapper">
         <a href="/donasi" className="btn donasi">
@@ -15,7 +15,6 @@ export default function Banner() {
           font-size: 6.4rem;
           color: white;
           font-family: "Baloo 2", sans-serif;
-          width: 50%;
           line-height: 1;
         }
 
@@ -23,7 +22,6 @@ export default function Banner() {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          width: 50%;
         }
         .proposal span {
           margin-right: 1rem;
@@ -63,6 +61,24 @@ export default function Banner() {
           flex-wrap: wrap;
           justify-content: space-between;
           align-items: center;
+        }
+        @media only screen and (max-width: 600px) {
+          section {
+            padding: 0 2rem;
+            flex-direction: column;
+            justify-content: center;
+            background-image: none;
+          }
+          h3 {
+            font-size: 4rem;
+            text-align: center;
+          }
+          .button-wrapper {
+            margin-top: 2rem;
+          }
+          .donasi {
+            margin-bottom: 1rem;
+          }
         }
       `}</style>
     </section>

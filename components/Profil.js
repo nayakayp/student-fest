@@ -12,7 +12,7 @@ export default function Profil() {
         yang ingin menumbuh kembangkan skill bersama mentor yang berpengalaman
         di bidangnya.
       </div>
-      <div className="video-placeholder">
+      <div className="video-placeholder" style={{ display: "none" }}>
         <iframe
           src="https://www.youtube.com/embed/gSSZHUgrbe0"
           frameBorder="0"
@@ -88,7 +88,7 @@ export default function Profil() {
         }
         .title-description {
           font-size: 2rem;
-          width: 630px;
+          padding: 0 25rem;
           text-align: center;
           margin: -3rem auto 4rem;
         }
@@ -108,9 +108,27 @@ export default function Profil() {
         }
         .video-placeholder,
         iframe {
-          width: 771px;
+          width: 100%;
           height: 450px;
           margin: 0 auto;
+        }
+        @media only screen and (max-width: 600px) {
+          section {
+            max-width: 600px;
+            padding: 2rem;
+          }
+          .hero-illustration {
+            display: none;
+          }
+          .btn {
+            font-size: 1.8rem;
+          }
+          .title-description {
+            padding: 0;
+          }
+          .event-list {
+            margin-bottom: 2rem;
+          }
         }
       `}</style>
     </section>

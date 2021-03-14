@@ -134,6 +134,14 @@ export default function Footer() {
           color: white;
           text-align: center;
         }
+        @media only screen and (max-width: 600px) {
+          .footer-wrapper {
+            margin: 0 2rem;
+          }
+          .footer-group {
+            margin-bottom: 3rem;
+          }
+        }
       `}</style>
     </footer>
   );

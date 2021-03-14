@@ -13,7 +13,9 @@ export default function Hero() {
             <span className="material-icons">arrow_downward</span>
           </a>
         </div>
-        <Image src="/images/hero illustration.png" width={453} height={407} />
+        <div className="hero-illustration">
+          <Image src="/images/hero illustration.png" width={453} height={407} />
+        </div>
       </div>
       <style jsx>{`
         h1 {
@@ -50,6 +52,21 @@ export default function Hero() {
           justify-content: space-between;
           align-items: center;
           min-height: 90vh;
+        }
+        @media only screen and (max-width: 600px) {
+          h1 {
+            font-size: 9rem;
+          }
+          .hero-wrapper {
+            max-width: 600px;
+            padding: 2rem;
+          }
+          .hero-illustration {
+            display: none;
+          }
+          .btn {
+            font-size: 1.8rem;
+          }
         }
       `}</style>
     </section>

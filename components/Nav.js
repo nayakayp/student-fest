@@ -1,16 +1,30 @@
 import Image from "next/image";
+import React, { useEffect } from "react";
 
 export default function Nav() {
-  // const close = document.querySelector(".close");
-  // const hamburger = document.querySelector(".hamburger");
-  // const links = document.querySelector(".links");
+  useEffect(() => {
+    const close = document.querySelector(".close");
+    const hamburger = document.querySelector(".hamburger");
+    const links = document.querySelector(".links");
+    const nav = document.querySelector("nav");
+    const profil = document.querySelector("#profil");
+    const offset = profil.offsetTop;
 
-  // hamburger.addEventListener("click", () => {
-  //   links.style.display = "";
-  // });
-  // close.addEventListener("click", () => {
-  //   links.style.display = "none";
-  // });
+    hamburger.addEventListener("click", () => {
+      links.style.display = "";
+    });
+    close.addEventListener("click", () => {
+      links.style.display = "none";
+    });
+    window.addEventListener("scroll", () => {
+      console.log(offset, window.pageYOffset);
+      if (window.pageYOffset >= offset) {
+        nav.classList.add("sticky");
+      } else {
+        nav.classList.remove("sticky");
+      }
+    });
+  });
 
   return (
     <nav>
@@ -45,6 +59,13 @@ export default function Nav() {
       </div>
 
       <style jsx>{`
+        .sticky {
+          position: fixed;
+          top: 0;
+          width: 100%;
+          z-index: 200;
+          background: #f2bc00;
+        }
         .close {
           font-size: 5rem;
           cursor: pointer;
@@ -103,6 +124,14 @@ export default function Nav() {
           color: white;
           font-size: 1.8rem;
           text-transform: uppercase;
+        }
+        @media only screen and (max-width: 600px) {
+          nav {
+            padding: 2rem;
+          }
+          .links {
+            width: 75vw;
+          }
         }
       `}</style>
     </nav>
