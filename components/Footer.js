@@ -26,13 +26,10 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div className="footer-group">
+        <div className="footer-group" style={{ display: "none" }}>
           <p className="title">Artikel Pilihan</p>
           <ul>
             <li>
-              <a href="#">-</a>
-            </li>
-            {/* <li>
               <a href="#">
                 Pemuda ini dapat mengalahkan 10 pemuda lainnya. Nomor 5 sungguh
                 mencengangkan
@@ -49,7 +46,7 @@ export default function Footer() {
                 Pemuda ini dapat mengalahkan 10 pemuda lainnya. Nomor 5 sungguh
                 mencengangkan
               </a>
-            </li> */}
+            </li>
           </ul>
         </div>
         <div className="footer-group">
