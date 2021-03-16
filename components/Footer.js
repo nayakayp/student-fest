@@ -8,11 +8,17 @@ export default function Footer() {
           <ul>
             <li>
               <span className="material-icons">location_on</span>
-              <p> Jl. Veratan No. 140 Kel.Barurambat Timur Pamekasan, Madura</p>
+              <p> Jl. Veteran No. 140 Kel.Barurambat Timur Pamekasan, Madura</p>
             </li>
             <li>
               <span className="material-icons">smartphone</span>
-              <p> 0819 3938 3452 (Whatsapp)</p>
+              <a
+                href="https://api.whatsapp.com/send?phone=6281939383452"
+                target="_blank"
+              >
+                {" "}
+                0819 3938 3452 (Whatsapp)
+              </a>
             </li>
             <li>
               <span className="material-icons">email</span>
@@ -24,6 +30,9 @@ export default function Footer() {
           <p className="title">Artikel Pilihan</p>
           <ul>
             <li>
+              <a href="#">-</a>
+            </li>
+            {/* <li>
               <a href="#">
                 Pemuda ini dapat mengalahkan 10 pemuda lainnya. Nomor 5 sungguh
                 mencengangkan
@@ -40,7 +49,7 @@ export default function Footer() {
                 Pemuda ini dapat mengalahkan 10 pemuda lainnya. Nomor 5 sungguh
                 mencengangkan
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div className="footer-group">

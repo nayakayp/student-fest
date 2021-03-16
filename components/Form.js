@@ -124,8 +124,8 @@ export default function Form() {
             <div className="message">
               <p className="btn success" style={{ display: "none" }}>
                 <strong>Selamat!</strong> pendaftaranmu telah kami terima. Kami
-                akan menghubungimu maksimal 1x24 jam. Terima kasih sudah
-                mendaftar di Student Fest #2!
+                akan segera menghubungimu. Terima kasih sudah mendaftar di
+                Student Fest #2!
               </p>
               <p className="btn failed" style={{ display: "none" }}>
                 <strong>Maaf!</strong> pendaftaranmu gagal. Coba lagi setelah
@@ -141,7 +141,7 @@ export default function Form() {
           <button className="acara">
             29 Maret s/d 25 April – Public Speaking <br />
             26 April s/d 23 Mei – PPT Mastery <br />
-            24 Mei s/d 20 Juni – Mentoring ke-2
+            24 Mei s/d 20 Juni – Entrepreneurship
           </button>
         </div>
       </div>

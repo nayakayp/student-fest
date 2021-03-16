@@ -1,12 +1,18 @@
+import Link from "next/link";
+
 export default function Banner() {
   return (
     <section id="donasi">
       <h3>Ingin mendukung program kami?</h3>
       <div className="button-wrapper">
-        <a href="/donasi" className="btn donasi">
-          Donasi Sekarang
-        </a>
-        <a href="/proposal" className="btn proposal" target="_blank">
+        <Link href="/donasi">
+          <a className="btn donasi">Donasi Sekarang</a>
+        </Link>
+        <a
+          href="https://drive.google.com/file/d/1oUzzOQGi-hCbrnwSLR0snS2p1buqfyWv/view?usp=sharing"
+          className="btn proposal"
+          target="_blank"
+        >
           <span className="material-icons">picture_as_pdf</span>Proposal Acara
         </a>
       </div>

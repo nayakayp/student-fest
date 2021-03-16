@@ -27,9 +27,9 @@ export default function Profil() {
             Power Point Mastery
           </div>
           <p className="description">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam
-            minus expedita tempora ex id molestias voluptates quisquam!
-            Similique, dolorum magni.
+            Selain tugas presentasi di sekolah, generasi muda saat ini dituntut
+            memiliki softskill seperti membuat PPT yang informatif sekaligus
+            menarik.
           </p>
         </div>
 
@@ -41,9 +41,8 @@ export default function Profil() {
           ></Image>
           <div className={`title ${utilStyles.textBlue}`}>Public Speaking</div>
           <p className="description">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam
-            minus expedita tempora ex id molestias voluptates quisquam!
-            Similique, dolorum magni.
+            Soft skill penting ini tak semua orang bisa mudah melakukannya.
+            Karena itu ayo belajar, latih, dan kembangkan skillmu disini
           </p>
         </div>
 
@@ -57,9 +56,8 @@ export default function Profil() {
             Entrepreneurship
           </div>
           <p className="description">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam
-            minus expedita tempora ex id molestias voluptates quisquam!
-            Similique, dolorum magni.
+            Masih siswa sudah menjadi seorang enterpreneur? Tentu bisa. Mulai,
+            latih, dan ciptakan kesuksesanmu!
           </p>
         </div>
       </div>

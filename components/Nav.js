@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect } from "react";
 
 export default function Nav() {
@@ -7,8 +8,14 @@ export default function Nav() {
     const hamburger = document.querySelector(".hamburger");
     const links = document.querySelector(".links");
     const nav = document.querySelector("nav");
-    const profil = document.querySelector("#profil");
-    const offset = profil.offsetTop;
+    // const profil = document.querySelector("#profil");
+    // const offset = profil.offsetTop;
+    const offset = 375;
+
+    if (window.location.pathname !== "/") {
+      console.log(window.location.pathname);
+      nav.style.backgroundColor = "#f2bc00";
+    }
 
     hamburger.addEventListener("click", () => {
       links.style.display = "";
@@ -27,31 +34,43 @@ export default function Nav() {
 
   return (
     <nav>
-      <Image
-        src="/images/logo.png"
-        height={65}
-        width={100}
-        alt="Student Festival"
-      />
-      <div className="menu">
-        <a href="#daftar" className="btn">
-          Daftar
+      <Link href="/">
+        <a>
+          <Image
+            src="/images/logo.png"
+            height={65}
+            width={100}
+            alt="Student Festival"
+          />
         </a>
+      </Link>
+      <div className="menu">
+        <Link href="/#daftar">
+          <a className="btn">Daftar</a>
+        </Link>
         <span className="material-icons hamburger">menu</span>
         <div className="links" style={{ display: "none" }}>
           <span className="material-icons close">close</span>
           <ul>
-            <li>
-              <a href="#">Artikel</a>
+            <li style={{ display: "none" }}>
+              <Link href="/artikel">
+                <a>Artikel</a>
+              </Link>
             </li>
             <li>
-              <a href="#daftar">Form Daftar </a>
+              <Link href="#daftar">
+                <a>Form Daftar </a>
+              </Link>
             </li>
             <li>
-              <a href="#faq">F.A.Q </a>
+              <Link href="/#faq">
+                <a>F.A.Q </a>
+              </Link>
             </li>
             <li>
-              <a href="#donasi">Donasi</a>
+              <Link href="/donasi">
+                <a>Donasi</a>
+              </Link>
             </li>
           </ul>
         </div>
