@@ -52,7 +52,7 @@ export default function Form() {
             <p className="inputLabel">Jenis Kelamin</p>
             <p className="inputLabel">Whatsapp</p>
             <p className="inputLabel">Alasan Ikut SF</p>
-            <p className="inputLabel">Hal Menarik Tentang Dirimu</p>
+            <p className="inputLabel">Ceritakan Tentang Dirimu</p>
           </div>
           <div className="input-wrapper">
             <input
@@ -287,6 +287,7 @@ export default function Form() {
             }
             .inputLabel {
               font-size: 1.6rem;
+              padding-top: 0.7rem;
             }
             .input-wrapper {
               width: 100%;
