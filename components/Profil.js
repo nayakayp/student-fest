@@ -17,7 +17,7 @@ export default function Profil() {
           src="https://www.youtube.com/embed/gSSZHUgrbe0"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullscreen
+          allowFullScreen
         ></iframe>
       </div>
       <div className="events">

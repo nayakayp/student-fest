@@ -22,7 +22,7 @@ export default function Footer() {
             </li>
             <li>
               <span className="material-icons">email</span>
-              <p> studentfestival.id@gmail.com</p>
+              <p>info@studentfest.id</p>
             </li>
           </ul>
         </div>

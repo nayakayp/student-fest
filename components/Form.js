@@ -50,7 +50,9 @@ export default function Form() {
             <p className="inputLabel">Asal Sekolah</p>
             <p className="inputLabel">Kelas</p>
             <p className="inputLabel">Jenis Kelamin</p>
-            <p className="inputLabel">No. Whatsapp</p>
+            <p className="inputLabel">Whatsapp</p>
+            <p className="inputLabel">Alasan Ikut SF</p>
+            <p className="inputLabel">Hal Menarik Tentang Dirimu</p>
           </div>
           <div className="input-wrapper">
             <input
@@ -112,7 +114,24 @@ export default function Form() {
               type="tel"
               name="whatsapp"
               id="whatsapp"
+              required
             />
+            <input
+              autoComplete="off"
+              type="text"
+              name="alasan"
+              id="alasan"
+              required
+            />
+            <textarea
+              autoComplete="off"
+              id="tentang"
+              type="text"
+              name="tentang"
+              rows="10"
+              required
+            />
+
             <div className="form-group">
               <input type="checkbox" name="agree" id="agree" required />
               <label htmlFor="agree">
@@ -207,13 +226,15 @@ export default function Form() {
             width: 431px;
           }
           .input-wrapper input,
-          select {
+          select,
+          textarea {
             background: white;
             border-radius: 5px;
             padding: 1.5rem 2rem;
             border: 1px solid #333;
             margin-bottom: 2rem;
             font-weight: 700;
+            font-family: "Arimo", sans-serif;
           }
           .radio-wrapper {
             padding: 1rem 0 2rem;
