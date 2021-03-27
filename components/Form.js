@@ -41,7 +41,22 @@ export default function Form() {
       <h3 className={utilStyles.headingLg}>Ikuti Acara Ini</h3>
       <h2 className={utilStyles.headingXl}>Daftarkan Dirimu</h2>
       <div className={`line ${utilStyles.line}`}></div>
-
+      <p
+        className="btn failed"
+        style={{ "text-align": "center", "font-size": "24px" }}
+      >
+        <strong>Maaf!</strong> sayangnya pendaftaran sudah ditutup karena
+        peserta sudah melebihi batas. <br></br> Bagi kamu yang belum dapat
+        kesempatan, bisa pantengin Instagram kami{" "}
+        <a
+          href="https://instagram.com/studentfestid"
+          target="_blank"
+          style={{ color: "white" }}
+        >
+          @studentfestid
+        </a>{" "}
+        dan nantikan Student Fest next batch!
+      </p>
       <div className="form-wrapper">
         <form name="submit-to-google-sheet" onSubmit={daftarAcara}>
           <div className="label-wrapper">
@@ -60,6 +75,7 @@ export default function Form() {
               id="nama"
               name="nama"
               type="text"
+              disabled
               required
             />
             <input
@@ -67,6 +83,7 @@ export default function Form() {
               id="email"
               type="email"
               name="email"
+              disabled
               required
             />
             <input
@@ -74,9 +91,10 @@ export default function Form() {
               id="sekolah"
               type="text"
               name="sekolah"
+              disabled
               required
             />
-            <select name="kelas" id="kelas" required>
+            <select name="kelas" id="kelas" required disabled>
               <optgroup label="SMP">
                 <option value="7">7</option>
                 <option value="8">8</option>
@@ -95,6 +113,7 @@ export default function Form() {
                   name="kelamin"
                   id="laki"
                   value="laki"
+                  disabled
                   required
                 />
                 Laki-laki
@@ -104,6 +123,7 @@ export default function Form() {
                   type="radio"
                   name="kelamin"
                   id="perempuan"
+                  disabled
                   value="perempuan"
                 />
                 Perempuan
@@ -114,6 +134,7 @@ export default function Form() {
               type="tel"
               name="whatsapp"
               id="whatsapp"
+              disabled
               required
             />
             <input
@@ -121,6 +142,7 @@ export default function Form() {
               type="text"
               name="alasan"
               id="alasan"
+              disabled
               required
             />
             <textarea
@@ -129,17 +151,26 @@ export default function Form() {
               type="text"
               name="tentang"
               rows="10"
+              disabled
               required
             />
 
             <div className="form-group">
-              <input type="checkbox" name="agree" id="agree" required />
+              <input
+                type="checkbox"
+                name="agree"
+                id="agree"
+                required
+                disabled
+              />
               <label htmlFor="agree">
                 Saya merupakan siswa tingkat SMP/SMA di Pamekasan dan Saya
                 menyetujui untuk mengikuti acara ini dengan sungguh-sungguh
               </label>
             </div>
-            <button type="submit">Submit Formulir</button>
+            <button type="submit" disabled>
+              Submit Formulir
+            </button>
             <div className="message">
               <p className="btn success" style={{ display: "none" }}>
                 <strong>Selamat!</strong> pendaftaranmu telah kami terima. Kami
