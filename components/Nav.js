@@ -78,11 +78,14 @@ export default function Nav() {
 
       <style jsx>{`
         .sticky {
+          width: 100%;
           position: fixed;
           top: 0;
-          width: 100%;
           z-index: 200;
           background: #f2bc00;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
         }
         .close {
           font-size: 5rem;

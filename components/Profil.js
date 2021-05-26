@@ -64,7 +64,7 @@ export default function Profil() {
       <style jsx>{`
         section {
           max-width: 1440px;
-          padding: 0 12.2rem;
+          padding: 3rem 12.2rem 0;
           margin: 0 auto;
         }
         h2,

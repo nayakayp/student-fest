@@ -17,6 +17,42 @@ export default function Hero() {
           <Image src="/images/hero illustration.png" width={453} height={407} />
         </div>
       </div>
+      <div className="sponsorship-wrapper">
+        <h3>Official Partnership</h3>
+        <div className="sponsorship-list">
+          <Image
+            src="/images/sponsorship/In Association with.png"
+            width={79}
+            height={80}
+          />
+          <Image
+            src="/images/sponsorship/LOGO PEMDA PAMEKASAN 1.png"
+            width={79}
+            height={80}
+          />
+          <Image src="/images/sponsorship/Sakecy.png" width={79} height={80} />
+          <Image
+            src="/images/sponsorship/Mask Group.png"
+            width={79}
+            height={80}
+          />
+          <Image
+            src="/images/sponsorship/Vector 9.png"
+            width={79}
+            height={80}
+          />
+          <Image
+            src="/images/sponsorship/Straight Away.png"
+            width={79}
+            height={80}
+          />
+          <Image
+            src="/images/sponsorship/KacongCebbhing.png"
+            width={79}
+            height={80}
+          />
+        </div>
+      </div>
       <style jsx>{`
         h1 {
           font-size: 13.8rem;
@@ -25,6 +61,10 @@ export default function Hero() {
           font-family: "Baloo 2", sans-serif;
           -webkit-text-stroke: 4px black;
           margin-bottom: 4rem;
+        }
+        h3 {
+          font-size: 2rem;
+          color: #333;
         }
         .btn {
           background: none;
@@ -45,6 +85,7 @@ export default function Hero() {
           background-position: center;
           background-repeat: no-repeat;
           margin: 0 auto;
+          position: relative;
         }
         .hero-wrapper {
           padding: 0 12.2rem;
@@ -53,9 +94,34 @@ export default function Hero() {
           align-items: center;
           min-height: 90vh;
         }
+        .sponsorship-wrapper {
+          position: absolute;
+          margin: 2rem 5rem;
+          padding: 2rem;
+          left: 0;
+          right: 0;
+          bottom: -100px;
+          border-radius: 20px;
+          text-align: center;
+          background: #ffffff;
+        }
+        .sponsorship-list {
+          margin-top: 3rem;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          flex-wrapper: wrap;
+        }
+        img {
+          width: 1px;
+        }
         @media only screen and (max-width: 600px) {
           h1 {
             font-size: 9rem;
+          }
+          .sponsorship-wrapper {
+            margin: 2rem 1rem;
+            padding: 1rem;
           }
           .hero-wrapper {
             max-width: 600px;

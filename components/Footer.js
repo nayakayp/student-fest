@@ -58,7 +58,7 @@ export default function Footer() {
                 href="https://www.instagram.com/p/CMUd9hSgPLl/"
               >
                 <img
-                  src="https://scontent-sin6-1.cdninstagram.com/v/t51.2885-15/e35/158876554_134683885162103_8849231670892201208_n.jpg?tp=1&amp;_nc_ht=scontent-sin6-1.cdninstagram.com&amp;_nc_cat=111&amp;_nc_ohc=CoGRDwY-gYQAX9ItjdW&amp;oh=71e20d033edadee7d894c8cc894d403d&amp;oe=607457AD"
+                  src="https://instagram.fsub3-2.fna.fbcdn.net/v/t51.2885-15/e35/187812280_2810663649199108_2004352244517645588_n.jpg?tp=1&_nc_ht=instagram.fsub3-2.fna.fbcdn.net&_nc_cat=104&_nc_ohc=TT90oJvn4PUAX9GD0SI&edm=AP_V10EBAAAA&ccb=7-4&oh=e7669f72f2800fd259ceaa99eb53de37&oe=60B645E4&_nc_sid=4f375e"
                   width="200"
                   height="200"
                 />
@@ -103,6 +103,7 @@ export default function Footer() {
         .instagram-placeholder {
           margin-top: 2rem;
           display: flex;
+          flex-wrap: wrap;
         }
         .instagram-placeholder li {
           margin-right: 1rem;
