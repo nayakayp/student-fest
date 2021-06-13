@@ -39,9 +39,9 @@ export default function Form() {
   };
   return (
     <section id="daftar">
-      <h3 className={utilStyles.headingLg}>Ikuti Acara Ini</h3>
-      <h2 className={utilStyles.headingXl}>Daftarkan Dirimu</h2>
-      <div className={`line ${utilStyles.line}`}></div>
+      <h3>WEBINAR</h3>
+      <h2 className={utilStyles.headingXl}>Microblog</h2>
+      <div className={`line `}></div>
       <p
         className="btn failed"
         style={{ display: "none", "text-align": "center", "font-size": "24px" }}
@@ -59,6 +59,14 @@ export default function Form() {
         dan nantikan Student Fest next batch!
       </p>
       <div className="form-wrapper">
+        <div className="timeline">
+          <Image
+            className="test"
+            src="/images/webinar-1.jpeg"
+            width={1080}
+            height={1080}
+          />
+        </div>
         <form name="submit-to-google-sheet" onSubmit={daftarAcara}>
           <div className="label-wrapper">
             <p className="inputLabel">Nama Lengkap</p>
@@ -146,12 +154,12 @@ export default function Form() {
             </div>
           </div>
         </form>
-        <div className="timeline">
-          <Image src="/images/webinar-1.jpeg" width={1080} height={1080} />
-        </div>
       </div>
       <style jsx>
         {`
+          .test {
+            width: 1%;
+          }
           p.btn {
             margin: 1rem auto;
             font-size: 1.6rem;
@@ -172,8 +180,19 @@ export default function Form() {
           h2 {
             color: #333;
           }
+          h3 {
+            font-size: 2.4rem;
+            font-weight: 800;
+            font-family: "Arimo", sans-serif;
+            padding-bottom: 1rem;
+            text-transform: uppercase;
+            text-align: center;
+          }
           .line {
+            height: 4px;
+            width: 200px;
             background: #333;
+            margin: 2rem auto 1rem;
           }
           section {
             max-width: 1440px;
@@ -237,7 +256,8 @@ export default function Form() {
             display: flex;
             flex-direction: column;
             flex: 1 1 20rem;
-            margin-left: 12rem;
+            margin-bottom: 2rem;
+            // margin-right: 12rem;
           }
           .timeline button {
             padding: 1.5rem 2rem;
