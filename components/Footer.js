@@ -58,7 +58,7 @@ export default function Footer() {
                 href="https://www.instagram.com/p/CMUd9hSgPLl/"
               >
                 <img
-                  src="https://instagram.fsub3-2.fna.fbcdn.net/v/t51.2885-15/e35/187812280_2810663649199108_2004352244517645588_n.jpg?tp=1&_nc_ht=instagram.fsub3-2.fna.fbcdn.net&_nc_cat=104&_nc_ohc=TT90oJvn4PUAX9GD0SI&edm=AP_V10EBAAAA&ccb=7-4&oh=e7669f72f2800fd259ceaa99eb53de37&oe=60B645E4&_nc_sid=4f375e"
+                  src="http://cors-anywhere.herokuapp.com/https://instagram.fsub3-2.fna.fbcdn.net/v/t51.2885-15/e35/187812280_2810663649199108_2004352244517645588_n.jpg?tp=1&_nc_ht=instagram.fsub3-2.fna.fbcdn.net&_nc_cat=104&_nc_ohc=TT90oJvn4PUAX9GD0SI&edm=AP_V10EBAAAA&ccb=7-4&oh=e7669f72f2800fd259ceaa99eb53de37&oe=60B645E4&_nc_sid=4f375e"
                   width="200"
                   height="200"
                 />
@@ -70,7 +70,7 @@ export default function Footer() {
                 href="https://www.instagram.com/p/CMSBAaFgLFq/"
               >
                 <img
-                  src="https://scontent-sin6-1.cdninstagram.com/v/t51.2885-15/e35/158916619_874637739785016_9121060854991628963_n.jpg?tp=1&amp;_nc_ht=scontent-sin6-1.cdninstagram.com&amp;_nc_cat=100&amp;_nc_ohc=sbs11_XweFkAX-EjJR2&amp;oh=eae6999362feecdeb7e6639d530c84c1&amp;oe=6076B2FD"
+                  src="https://scontent-hel3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/c128.0.768.768a/s640x640/120198840_724174718305191_6739531145418595319_n.jpg?tp=1&_nc_ht=scontent-hel3-1.cdninstagram.com&_nc_cat=103&_nc_ohc=rihiCGfB_OAAX9NUDh-&edm=APU89FABAAAA&ccb=7-4&oh=09564e2ca38284ba5497792a693c17ff&oe=60B54EC8&_nc_sid=86f79a"
                   width="200"
                   height="200"
                 />
