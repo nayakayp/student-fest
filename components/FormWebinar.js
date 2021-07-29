@@ -40,7 +40,7 @@ export default function Form() {
   return (
     <section id="daftar">
       <h3>WEBINAR</h3>
-      <h2 className={utilStyles.headingXl}>Microblog</h2>
+      <h2 className={utilStyles.headingXl}>Class</h2>
       <div className={`line `}></div>
       <p
         className="btn failed"
@@ -62,7 +62,7 @@ export default function Form() {
         <div className="timeline">
           <Image
             className="test"
-            src="/images/webinar-1.jpeg"
+            src="/images/webinar-2.png"
             width={1080}
             height={1080}
           />
@@ -145,7 +145,7 @@ export default function Form() {
               <p className="btn success" style={{ display: "none" }}>
                 <strong>Selamat!</strong> pendaftaranmu telah kami terima. Kami
                 akan segera menghubungimu. Terima kasih sudah mendaftar Webinar
-                Microblog!
+                "Living Pandemic: Try Control Yourself"
               </p>
               <p className="btn failed" style={{ display: "none" }}>
                 <strong>Maaf!</strong> pendaftaranmu gagal. Coba lagi setelah
@@ -196,7 +196,7 @@ export default function Form() {
           }
           section {
             max-width: 1440px;
-            padding: 0 12.2rem 8rem;
+            padding: 2rem 12.2rem 8rem;
             margin: 0 auto;
           }
           .form-wrapper {
@@ -204,6 +204,7 @@ export default function Form() {
             justify-content: space-between;
             align-items: flex-start;
             flex-wrap: wrap;
+            padding-top: 2rem;
           }
           form {
             display: flex;
@@ -307,6 +308,9 @@ export default function Form() {
             }
             .radio-wrapper label {
               font-size: 1.6rem;
+            }
+            .form-wrapper {
+              padding-top: 0;
             }
           }
         `}
