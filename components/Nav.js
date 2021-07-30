@@ -45,9 +45,9 @@ export default function Nav() {
         </a>
       </Link>
       <div className="menu">
-        <Link href="/#daftar">
+        {/* <Link href="/#daftar">
           <a className="btn">Daftar</a>
-        </Link>
+        </Link> */}
         <span className="material-icons hamburger">menu</span>
         <div className="links" style={{ display: "none" }}>
           <span className="material-icons close">close</span>
